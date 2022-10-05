@@ -18,7 +18,7 @@ export const App = () => {
   
 
   useEffect(() => {
-    const updateImages = (searchRequest, galleryPage) => {
+    const updateImages = async (searchRequest, galleryPage) => {
       setIsLoading(true);
       try {
         fetchImages(searchRequest, galleryPage).then(data => {
